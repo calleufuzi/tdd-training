@@ -1,0 +1,24 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "tdd training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calleufuzi/tdd-training.git"
+  },
+  "keywords": [
+    "tdd",
+    "javascript",
+    "package"
+  ],
+  "author": "Calleu Fuzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calleufuzi/tdd-training/issues"
+  },
+  "homepage": "https://github.com/calleufuzi/tdd-training#readme"
+}
