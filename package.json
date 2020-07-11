@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/calleufuzi/tdd-training/issues"
   },
-  "homepage": "https://github.com/calleufuzi/tdd-training#readme"
+  "homepage": "https://github.com/calleufuzi/tdd-training#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }
