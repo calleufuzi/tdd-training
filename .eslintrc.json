@@ -1,11 +1,10 @@
 {
   "env": {
     "browser": true,
-    "es2020": true,
-    "jest/globals": true
+    "es2020": true
   },
-  "extends": ["prettier", "airbnb-base"],
-  "plugins": ["prettier", "jest"],
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["jest", "prettier"],
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module"
