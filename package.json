@@ -4,8 +4,8 @@
   "description": "tdd training",
   "main": "index.js",
   "scripts": {
-    "lint": "node_modules/.bin/eslint src/*js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "node_modules/.bin/eslint --fix-dry-run src/*js ",
+    "test": "jest --coverage"
   },
   "husky": {
     "hooks": {
@@ -27,11 +27,18 @@
     "url": "https://github.com/calleufuzi/tdd-training/issues"
   },
   "homepage": "https://github.com/calleufuzi/tdd-training#readme",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
-    "husky": "^4.2.5"
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5"
   }
 }
