@@ -13,7 +13,9 @@ jest.mock('node-fetch');
 
 describe('Spotify Wrapper', () => {
   beforeEach(() => {
-    fetch.mockResolvedValue({});
+    fetch.mockResolvedValue(
+      Promise.resolve({ json: () => Promise.resolve({ body: 'json' }) })
+    );
   });
   afterEach(() => {
     fetch.mockClear();
@@ -49,7 +51,7 @@ describe('Spotify Wrapper', () => {
     it('should return JSON data from promise', () => {
       const artistAndAlbum = search('vintageculture', 'artist');
 
-      expect(artistAndAlbum).resolves.toStrictEqual({ body: 'json' });
+      return expect(artistAndAlbum).resolves.toStrictEqual({ body: 'json' });
     });
   });
 
